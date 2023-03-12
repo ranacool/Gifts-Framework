@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Payment Suite">
+    <test verbose="2" preserve-order="true" name="/home/hamropatro/Test-Automation-Practice/Annotations">
+        <classes>
+
+            <class name="Payment.ChromePay">
+                <methods>
+                    <include name="AddToCartChrome"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Edge" enabled="false">
+        <classes>
+
+            <class name="Payment.EdgePay">
+                <methods>
+                    <include name="AddToCart"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="Firefox">
+
+        <classes>
+
+            <class name="Payment.firefoxPay">
+                <methods>
+                    <include name="AddToCartFire"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+</suite>
